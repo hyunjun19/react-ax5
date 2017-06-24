@@ -7,10 +7,17 @@
     "@types/node": "^8.0.0",
     "@types/react": "^15.0.29",
     "@types/react-dom": "^15.5.0",
+    "ax5core": "1.4.81",
+    "ax5ui-layout": "1.4.81",
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   },
   "devDependencies": {
+    "@types/enzyme": "^2.8.1",
+    "enzyme": "^2.9.1",
+    "react-addons-test-utils": "^15.6.0",
     "react-scripts-ts": "2.2.0"
   },
   "scripts": {
