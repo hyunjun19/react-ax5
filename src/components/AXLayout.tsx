@@ -1,24 +1,29 @@
 import * as React from 'react';
 
 export interface Props {
-  config: string;
-  style: object;
+  config?: {
+    animateTime?: number,
+    splitter?: {
+      size?: number,
+    },
+    autoResize?: boolean,
+  };
+  style?: object;
 }
 
-export interface State {
-
-}
+export interface State {}
 
 class AXLayout extends React.Component<Props, State> {
   render() {
     const {
-      // config,
+      config,
       style,
+      children,
     } = this.props;
 
     return (
-      <div data-ax5layout="ax1" style={style}>
-        AXLayout
+      <div data-ax5layout="ax5" style={style} data-config={config}>
+        {children}
       </div>
     );
   }

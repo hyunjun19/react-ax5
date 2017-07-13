@@ -7,7 +7,7 @@ import AXLayout from './components/AXLayout';
 class App extends React.Component<{}, {}> {
   render() {
     return (
-      <AXLayout config="config test" style={{ width: 100 }}>
+      <AXLayout config={{ animateTime: 600 }} style={{ width: 100 }}>
         <p>ok</p>
       </AXLayout>
     );
