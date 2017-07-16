@@ -1,8 +1,10 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import * as enzyme from 'enzyme';
 import AXLayout from './AXLayout';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<AXLayout />, div);
+describe('<AXLayout />', () => {
+  it('AXLayout DOM rendering test', () => {
+    const axLayout = enzyme.shallow(<AXLayout />);
+    expect(axLayout.prop('data-ax5layout')).toEqual('ax5');
+  });
 });
